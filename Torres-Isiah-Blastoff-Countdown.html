@@ -1,0 +1,186 @@
+<!--UAT Blastoff Assignment by Isiah Torres, for CSC 102.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blastoff! </title>
+     <!--Below could also be placed in a css file for consistency.-->
+     <style>
+        body 
+        {   background-color: honeydew;
+            background-image: radial-gradient(closest-side at 50% 55%, white, dodgerblue, black);
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        img
+        {   
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;}
+        button
+        {   border-radius: 0%;
+            align-content: center;}
+        h2 {color:maroon;}
+        
+    </style>
+    <!--"background-image: radial-gradient" fades out from the center, from one color to another-->
+    <script>
+        // The <script> tag lets the browser know we are in JavaScript and not HTML
+            function StartTheCountdown()
+            {
+                // Purpose of the function is to start and control the countdown.
+                // Declare variables
+                // used to display to user on screen, added extra value so "10" will pop up. 
+                    var countdown = 10;
+                // used to keep track of actual time
+                // 1000 millisecond = 1 second, because we are using milliseconds.
+                    var timeout = 10000;
+                    // we need to use the setTimeout function for countdown
+                    // we need to do this 12 times. (counting 0 and output "Blastoff!" 10 seconds.)
+                    // Desired end result placed first for some reason. "innerHTML" changes the content inside of tags. 
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = "Blastoff!";
+                        countdown--;
+                       
+                    }, timeout)
+                    timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+timeout = timeout - 1000;
+
+                    //********************************************************
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+                    timeout = timeout - 1000;
+
+                    //********************************************************
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+                    timeout = timeout - 1000;
+
+                    //********************************************************
+
+                    setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+                    timeout = timeout - 1000;
+
+                   //********************************************************
+
+                   setTimeout(() => {
+                        document.getElementById("CountdownDisplay").innerHTML = countdown;
+                        countdown--;
+                       
+                    }, timeout)
+                    timeout = timeout - 1000;
+            }
+            
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <!--Inserting image on the top in the center.-->
+    <img align=center src="UATspaceLogo.jpg"/>
+    <br>
+    <br>
+    <h1> <b> UAT SPACE MISSION CONTROL </b> </h1>
+    <br>
+    <h2> Get ready to blast off! </h2>
+    <br>
+     <!--Button to start countdown. Button will call on the "StartTheCountdown()" function when clicked to start the countdown.-->
+    <button type="button" onclick="StartTheCountdown()" style="background-color: rgb(8, 138, 36); font: larger, bolder; font-family: Arial, Helvetica, sans-serif;">
+    START COUNTDOWN </button>
+    <br>
+    <br>
+    <br>
+    <h2  style="font: bold;"> COUNTDOWN! </h2>
+    <br>
+    <!--Where the countdown will be displayed.-->
+    <h3 id="CountdownDisplay"> 10 </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
